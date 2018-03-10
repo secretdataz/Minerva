@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/account/account.iml" filepath="$PROJECT_DIR$/.idea/modules/account/account.iml" group="account" />
+      <module fileurl="file://$PROJECT_DIR$/account/src/main/account_main.iml" filepath="$PROJECT_DIR$/account/src/main/account_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account/src/test/account_test.iml" filepath="$PROJECT_DIR$/account/src/test/account_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/character/character.iml" filepath="$PROJECT_DIR$/.idea/modules/character/character.iml" group="character" />
+      <module fileurl="file://$PROJECT_DIR$/character/src/main/character_main.iml" filepath="$PROJECT_DIR$/character/src/main/character_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/character/src/test/character_test.iml" filepath="$PROJECT_DIR$/character/src/test/character_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/common/src/main/common_main.iml" filepath="$PROJECT_DIR$/common/src/main/common_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/src/test/common_test.iml" filepath="$PROJECT_DIR$/common/src/test/common_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/minerva.iml" filepath="$PROJECT_DIR$/.idea/modules/minerva.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/account/minerva-account_main.iml" filepath="$PROJECT_DIR$/.idea/modules/account/minerva-account_main.iml" group="account" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/account/minerva-account_test.iml" filepath="$PROJECT_DIR$/.idea/modules/account/minerva-account_test.iml" group="account" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/character/minerva-character_main.iml" filepath="$PROJECT_DIR$/.idea/modules/character/minerva-character_main.iml" group="character" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/character/minerva-character_test.iml" filepath="$PROJECT_DIR$/.idea/modules/character/minerva-character_test.iml" group="character" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/minerva-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/minerva-common_main.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/minerva-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/minerva-common_test.iml" group="common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zone/minerva-zone_main.iml" filepath="$PROJECT_DIR$/.idea/modules/zone/minerva-zone_main.iml" group="zone" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zone/minerva-zone_test.iml" filepath="$PROJECT_DIR$/.idea/modules/zone/minerva-zone_test.iml" group="zone" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/minerva_main.iml" filepath="$PROJECT_DIR$/.idea/modules/minerva_main.iml" group="minerva" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/minerva_test.iml" filepath="$PROJECT_DIR$/.idea/modules/minerva_test.iml" group="minerva" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zone/zone.iml" filepath="$PROJECT_DIR$/.idea/modules/zone/zone.iml" group="zone" />
+      <module fileurl="file://$PROJECT_DIR$/zone/src/main/zone_main.iml" filepath="$PROJECT_DIR$/zone/src/main/zone_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zone/src/test/zone_test.iml" filepath="$PROJECT_DIR$/zone/src/test/zone_test.iml" />
+    </modules>
+  </component>
+</project>

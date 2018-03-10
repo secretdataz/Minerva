@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="minerva-account_main" target="1.8" />
+      <module name="minerva-account_test" target="1.8" />
+      <module name="minerva-character_main" target="1.8" />
+      <module name="minerva-character_test" target="1.8" />
+      <module name="minerva-common_main" target="1.8" />
+      <module name="minerva-common_test" target="1.8" />
+      <module name="minerva-zone_main" target="1.8" />
+      <module name="minerva-zone_test" target="1.8" />
+      <module name="minerva_main" target="1.8" />
+      <module name="minerva_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

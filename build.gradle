@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+allprojects {
+    repositories {
+        jcenter() 
+    }
+}
+
+dependencies {
+    compile project(':common'),
+            project(':account'),
+            project(':character'),
+            project(':zone')
+}
+
+subprojects {
+    apply plugin: 'java'
+    version = '1.0'
+}
