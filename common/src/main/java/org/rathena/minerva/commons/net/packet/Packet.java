@@ -3,17 +3,18 @@ package org.rathena.minerva.commons.net.packet;
 import io.netty.buffer.ByteBuf;
 
 public abstract class Packet {
-    private ByteBuf byteBuf;
 
-    public Packet(ByteBuf byteBuf) {
-        this.byteBuf = byteBuf;
-    }
+    protected int packetId;
 
-    public ByteBuf getByteBuf() {
-        return byteBuf;
-    }
+    public Packet() {}
 
     public int getPacketId() {
-        return byteBuf.getUnsignedShortLE(0);
+        return packetId;
     }
+
+    protected void setPacketId(int packetId) {
+        this.packetId = packetId;
+    }
+
+    public abstract byte[] toByteArray();
 }

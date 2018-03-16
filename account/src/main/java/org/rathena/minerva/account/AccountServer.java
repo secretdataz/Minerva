@@ -7,8 +7,7 @@ import org.rathena.minerva.commons.DefaultServer;
 import org.rathena.minerva.commons.Minerva;
 import org.rathena.minerva.commons.MMOServer;
 import org.rathena.minerva.commons.net.GameServer;
-import org.rathena.minerva.commons.net.GameServerHandler;
-import org.rathena.minerva.commons.net.InboundPacketSource;
+import org.rathena.minerva.commons.net.PacketDatabase;
 import org.rathena.minerva.commons.util.config.ServerConfiguration;
 
 public class AccountServer implements MMOServer {
@@ -16,7 +15,7 @@ public class AccountServer implements MMOServer {
     public ServerConfiguration config;
     public static Logger logger;
 
-    private InboundPacketSource inboundPacketSource;
+    private PacketDatabase packetDatabase;
 
     public static void main(String... args) {
         logger = LogManager.getLogger();
@@ -56,9 +55,10 @@ public class AccountServer implements MMOServer {
     public void start() {
         logger.info("Using packet version: " + config.getPacketVersion());
         try {
-            inboundPacketSource = new GameServerHandler();
-            inboundPacketSource.registerPacketListener("MINERVA", new LoginPacketListener(inboundPacketSource));
-            new GameServer((GameServerHandler) inboundPacketSource, this.config.getPort()).start();
+            GameServer gameServer = new GameServer(this.config.getPort());
+            packetDatabase = gameServer;
+            packetDatabase.registerPacketListener("MINERVA", new LoginPacketListener(packetDatabase));
+            gameServer.start();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -70,7 +70,7 @@ public class AccountServer implements MMOServer {
     }
 
     @Override
-    public InboundPacketSource getInboundPacketSource() {
-        return inboundPacketSource;
+    public PacketDatabase getPacketDatabase() {
+        return packetDatabase;
     }
 }

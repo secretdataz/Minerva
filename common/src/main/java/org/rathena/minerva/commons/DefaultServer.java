@@ -1,6 +1,6 @@
 package org.rathena.minerva.commons;
 
-import org.rathena.minerva.commons.net.InboundPacketSource;
+import org.rathena.minerva.commons.net.PacketDatabase;
 
 public class DefaultServer implements MMOServer {
     @Override
@@ -14,7 +14,7 @@ public class DefaultServer implements MMOServer {
     }
 
     @Override
-    public InboundPacketSource getInboundPacketSource() {
+    public PacketDatabase getPacketDatabase() {
         return null;
     }
 }
